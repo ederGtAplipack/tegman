@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylessi.css">
+</head>
+<body>  
+   <form name="input" action="https://000sbacchim2.000webhostapp.com/cadEquipamento.php" method="POST">
+    <table align="center"  class="form-inline">
+      <h2> Cadastro de Máquina</h2>
+   <tr>
+      <td>NI:</td>
+      <td><input type="text" name="ni" maxlength="20" size="20" value=""</td>
+   </tr>
+   <div>
+     <tr>
+      <td>Nome Equipamento:</td>
+      <td><input type="text" name="nome_equipamento" maxlength="40" size="40" value=""</td>
+     </tr>
+   </div>
+   <div>
+   <tr>
+      <td>Data de Aquisição:</td>
+      <td><input type="date" name="dt_aquisicao" maxlength="20" size="20" value=""</td>
+   </tr>
+   </div>
+   <div> 
+      <tr>
+         <td>NI:</td>
+         <td><input type="date" name="dt_fabricacao" maxlength="20" size="20" value=""</td>
+      </tr>      
+   </div>
+   <div>
+     <tr>
+      <td>Setor:</td>
+      <td><input type="text" name="setor" maxlength="20" size="20" value=""</td>
+   </tr> 
+   </div>
+   <div>
+   <tr>
+      <td>Fabricante:</td>
+      <td><input type="text" name="fabricante" maxlength="20" size="20" value=""</td>
+   </tr>
+   </div>   
+   <div>
+     <tr>
+      <td></td>
+      <td><input type="submit" name="adicionar" value="Adicionar"></td>
+     </tr>
+   </div>     
+</table>
+</form>
+<table align="center" class="form-inline">
+   <tr>
+     <td>
+       <form method="post" action="https://000sbacchim2.000webhostapp.com/editarSusp.php">                 
+         <div>
+         <label for="nome">Valor:</label>
+         <input type="text" name="valor" size=20 value="valor" maxlength="20">
+
+         <input type="radio" id="ni" name="ni" value="ni">
+         <label for="ni">NI</label>
+         
+         <input type="radio" id="nome_equipamento" name="nome_equipamento" value="nome_equipamento"></input>
+         <label for="nome_equipamento">Descrição Máquina</label>
+         
+         <input type="radio" id="setor" name="setor" value="setor"></input>
+         <label for="setor">Setor</label>
+         <input align="center" type="submit" name="search" value="Pesquisar">
+         </div>         
+       </form>
+     </td>
+   </tr>
+ </table>
+</body>
+</html>
